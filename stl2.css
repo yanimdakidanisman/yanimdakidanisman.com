@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	background:url(rsm3.jpg);
+	height: 100%;
+	background-size:100% 100%;
+	
+}
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık Stili */
+h1 {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Psikologlar Bölümü */
+.psikolog-card {
+    background-color: #FEFEFE;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s;
+}
+
+.psikolog-card:hover {
+    transform: scale(1.02);
+}
+
+.psikolog-header {
+    display: flex;
+    align-items: center;
+}
+
+.psikolog-header img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.psikolog-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+.psikolog-title {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.psikolog-description {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .psikolog-card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .psikolog-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .psikolog-header img {
+        margin-bottom: 15px;
+    }
+}
